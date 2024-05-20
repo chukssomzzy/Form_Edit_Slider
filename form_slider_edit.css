@@ -1,0 +1,131 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+button {
+    cursor: pointer; 
+    margin: 0; 
+
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+p {
+    margin: 0; 
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+}
+
+
+.hidden{
+    display: none;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.img{
+    width: 80px;
+    height: 80px;
+}
+.lists {
+    width: 600px;
+    padding: 20px 15px;
+    margin: 4em auto;
+    box-shadow: 0 0 10px gray;
+    border-radius: 30px;
+}
+
+
+.list-item {
+    flex: initial;
+    border:  1px solid black;
+    border-radius: 10px;
+    margin: 1em;
+}
+
+aside .large {
+    font-size: 1.1em;
+}
+
+.list-item__inner {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-item__inner > div {
+    padding: .5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-item-desc {
+    margin-left: .8em;
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.list-item-desc center{
+    display: flex;
+    justify-content:  center;
+    flex-direction:  column;
+    border: 2px solid green;
+
+
+}
+
+.list-item-desc h2{
+    color: red;
+}
+
+.list-item__inner svg {
+    cursor: pointer; 
+    width: 1.5em; 
+    height: 1.5em;
+    font-size: 1.5em;
+    border: 1px solid gray;
+    padding: .5rem;
+    border-radius: 4px;
+}
+
+.list-item aside {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin: 0 .5em;
+}
+
+aside h2 {
+    font-size: 1.2em; 
+    font-weight: 500; 
+}
+
+.list-item__inner form {
+    display: contents;
+}
+
+.list-item__inner button {
+    height: max-content;
+    padding: .5rem;
+    background: green;
+    color:white;
+    font-size: 15px;
+    padding:  8px 25px;
+    box-shadow: none;
+    border: 1px solid orange;
+    margin: .5em;
+    border-radius: 15px;
+    font-size: 1.2em;
+}
