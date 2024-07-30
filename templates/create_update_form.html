@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>form update | single page update</title>
+    <link rel="stylesheet" href="/static/styles/normalize.css" />
+    <link rel="stylesheet" href="/static/styles/create_update_form.css" />
+    <script
+      type="text/javascript"
+      src="/static/scripts/create_update_form.js"
+    ></script>
+  </head>
+  <body>
+    <main class=".main">
+      <section class="container">
+        <header class="center_header">
+          <h2>Payables Categories</h2>
+        </header>
+        <ul class="payable_lists">
+          <li class="payable_list_item">
+            <button class="action_blue">Add</button>
+            <div class="payable_c_name">
+              <h3>Payable Category</h3>
+              <time datetime="">jun 20, 2024</time>
+            </div>
+            <p><span>$</span> 2000</p>
+          </li>
+          <li>
+            <button class="action_blue">Add</button>
+            <div class="payable_c_name">
+              <h3>Payable Category</h3>
+              <time datetime="">jun 20, 2024</time>
+            </div>
+            <p><span>$</span> 2000</p>
+          </li>
+          <li>
+            <button class="action_blue">Add</button>
+            <div class="payable_c_name">
+              <h3>Payable Category</h3>
+              <time datetime="">jun 20, 2024</time>
+            </div>
+            <p><span>$</span> 2000</p>
+          </li>
+        </ul>
+        <footer class="payable_footer">
+          <aside>
+            <button class="button_normal">prev</button>
+
+            <button class="button_normal">next</button>
+          </aside>
+        </footer>
+      </section>
+
+      <section class="container">
+        <header>
+          <button class="button_normal warning">Cancel</button>
+          <h3>Payable Details</h3>
+          <button class="button_normal success">Save</button>
+        </header>
+        <form class="add_category">
+          <input
+            class=".input_size_2_3"
+            type="text"
+            placeholder="Add new Category"
+          />
+          <button type="submit" class="button_normal">Add new</button>
+        </form>
+        <div class="review_payables">
+          <select id="select_payable_category" name="payable_category">
+            <option value="">Select A Category</option>
+            <option value="Salary">Salary</option>
+            <option value="Roof Space">Roof Space</option>
+            <option value="Data Usage">Data Usage</option>
+          </select>
+          <button class="button_normal">Review Payables</button>
+        </div>
+        <div class="add_invoice">
+          <button class="button_normal action_blue">Add invoice</button>
+        </div>
+        <div class="visible invoice_info">
+          <p class="invoice_amount">
+            Amount: <span class="highlight">2000</span>
+          </p>
+          <p class="highlight">inv_12343</p>
+        </div>
+      </section>
+
+      <section class="container">
+        <form>
+          <header>
+            <button class="button_normal warning">Cancel</button>
+            <h2>Invoice</h2>
+            <button class="button_normal success">Save</button>
+          </header>
+          <label class="invoice_label" for="invoice_id">Invoice ID*</label>
+
+          <input
+            class="invoice_input"
+            type="text"
+            id="invoice_id"
+            placeholder="Enter Invoice Identifier"
+          />
+
+          <label class="invoice_label" for="invoice_description">
+            Description
+          </label>
+          <input
+            class="invoice_input"
+            type="text"
+            id="invoice_description"
+            placeholder="Describe Invoice"
+          />
+          <div class="invoice_amount_cnt">
+            <label class="invoice_label" for="invoice_amount">Amount*</label>
+
+            <input type="number" id="invoice_amount" placeholder="Amount" />
+
+            <label class="invoice_label" for="invoice_date">Date*</label>
+
+            <input type="date" id="invoice_date" />
+          </div>
+        </form>
+      </section>
+
+      <section class="container">
+        <header class="center_header"><h2>Payables</h2></header>
+        <ul class="payable_lists">
+          <li>
+            <button class="action_blue">modify</button>
+            <div class="payable_c_name">
+              <p class="highlight invoice_id_c">inv_1234</p>
+              <time datetime="12343414134141">jun 20, 2024</time>
+            </div>
+            <p><span>$</span> 2000</p>
+          </li>
+          <li>
+            <button class="action_blue">modify</button>
+            <div class="payable_c_name">
+              <p class="highlight invoice_id_c">inv_1234</p>
+              <time datetime="12343414134141">jun 20, 2024</time>
+            </div>
+            <p><span>$</span> 2000</p>
+          </li>
+          <li>
+            <button class="action_blue">modify</button>
+            <div class="payable_c_name">
+              <p class="highlight invoice_id_c">inv_1234</p>
+              <time class="payable_list_time" datetime="12343414134141">
+                jun 20, 2024
+              </time>
+            </div>
+            <p><span>$</span> 2000</p>
+          </li>
+        </ul>
+        <footer class="payable_footer">
+          <button class="action_blue">Add Payables</button>
+          <aside>
+            <button class="button_normal">prev</button>
+
+            <button class="button_normal">next</button>
+          </aside>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
